@@ -223,7 +223,7 @@ setInterval(updateStatusTime, 60000);
 // ===== CALL LOG TIME =====
 const times = document.querySelectorAll('.time');
 const now = new Date();
-[1,9,16].forEach((min, i) => {
+[1,9,17].forEach((min, i) => {
     const t = new Date(now - min*60000);
     times[i].innerText =
         String(t.getHours()).padStart(2,'0') + ':' +
@@ -255,4 +255,5 @@ function exportImage() {
 
 </body>
 </html>
+
 
